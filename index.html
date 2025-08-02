@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Complete IoT Study Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main id="app-container">
+        <div class="page active" id="page-1">
+            <div class="container">
+                <div class="header">
+                    <h1>🌐 Internet of Things (IoT) Study Guide</h1>
+                    <p>ECE Department | 3rd Year Elective Course | CAT Exam Preparation</p>
+                </div>
+                <div class="content">
+                    <div class="nav-tabs">
+                        <button class="tab-btn active" data-tab="basics">🔍 Basics</button>
+                        <button class="tab-btn" data-tab="technologies">💡 Technologies</button>
+                        <button class="tab-btn" data-tab="systems">⚙️ Systems</button>
+                        <button class="tab-btn" data-tab="applications">🌎 Applications</button>
+                        <button class="tab-btn" data-tab="quiz-1">🧠 Quiz</button>
+                    </div>
+                    <div class="tab-content active" id="basics">
+                        <div class="section">
+                            <h2><span class="emoji">🤔</span>What is IoT?</h2>
+                            <p>Imagine if your lights, fans, and even water bottles could talk to each other and to you
+                                through the internet! That's the Internet of Things (IoT) - connecting everyday physical
+                                objects to make our lives smarter and easier.</p>
+                            <div class="important-note"><strong>🎯 Exam Key Point:</strong> IoT is about creating a
+                                giant network where every physical object can share information to provide better
+                                services.</div>
+                        </div>
+                        <div class="section">
+                            <h2><span class="emoji">📝</span>Key Concepts for CAT Exam</h2>
+                            <div class="info-grid">
+                                <div class="info-card point"><strong>Big Vision:</strong> Soon, almost everything around
+                                    us will be connected to the internet, creating smart environments.</div>
+                                <div class="info-card point"><strong>Embedded Systems:</strong> Tiny computers and
+                                    sensors put into everyday objects like lightbulbs and washing machines.</div>
+                                <div class="info-card point"><strong>Massive Scale:</strong> Over 20 billion devices
+                                    will be connected soon - more than people on Earth!</div>
+                                <div class="info-card point"><strong>Two Approaches:</strong> Add to existing internet
+                                    OR build a new internet just for IoT devices.</div>
+                                <div class="info-card point"><strong>Smart Infrastructure:</strong> IoT is key for
+                                    building smart homes and smart cities.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="technologies">
+                        <div class="section">
+                            <h2><span class="emoji">💡</span>Technologies that Make IoT Possible</h2>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h4>📡 RFID</h4>
+                                    <p>Radio-Frequency Identification - like a special barcode using radio waves to
+                                        identify objects</p>
+                                </div>
+                                <div class="info-card">
+                                    <h4>👁️ Sensors</h4>
+                                    <p>The "eyes and ears" - detect temperature, light, motion, and other environmental
+                                        factors</p>
+                                </div>
+                                <div class="info-card">
+                                    <h4>🤖 Actuators</h4>
+                                    <p>The "hands" - perform actions like turning lights on/off, opening doors</p>
+                                </div>
+                                <div class="info-card">
+                                    <h4>📶 Wireless Communication</h4>
+                                    <p>Wi-Fi, Bluetooth, ZigBee - let devices talk without wires</p>
+                                </div>
+                                <div class="info-card">
+                                    <h4>🔬 Nanotechnology</h4>
+                                    <p>Tiny devices for "Internet of Nano Things" - ultra-small connected systems</p>
+                                </div>
+                                <div class="info-card">
+                                    <h4>☁️ Cloud Computing</h4>
+                                    <p>Stores and processes data from millions of IoT devices</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="systems">
+                        <div class="section">
+                            <h2><span class="emoji">⚙️</span>Important IoT System Requirements</h2>
+                            <h3>🔋 Key System Characteristics</h3>
+                            <div class="info-grid">
+                                <div class="info-card point"><strong>Efficiency:</strong> Must work well without wasting
+                                    energy or resources</div>
+                                <div class="info-card point"><strong>Scalability:</strong> Handle millions of new
+                                    devices being added continuously</div>
+                                <div class="info-card point"><strong>Low Power:</strong> Many run on batteries, need
+                                    excellent power management</div>
+                                <div class="info-card point"><strong>Mobility:</strong> Track and manage devices that
+                                    move around</div>
+                            </div>
+                            <div class="important-note"><strong>🎯 Exam Focus:</strong> Every IoT device needs a unique
+                                name/address for network identification - this is crucial for system architecture!</div>
+                            <h3>🏗️ System Architecture Components</h3>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h4>Device Layer</h4>
+                                    <p>Physical sensors, actuators, and embedded systems</p>
+                                </div>
+                                <div class="info-card">
+                                    <h4>Connectivity Layer</h4>
+                                    <p>Communication protocols and network infrastructure</p>
+                                </div>
+                                <div class="info-card">
+                                    <h4>Data Processing</h4>
+                                    <p>Edge computing and cloud analytics</p>
+                                </div>
+                                <div class="info-card">
+                                    <h4>Application Layer</h4>
+                                    <p>User interfaces and business applications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="applications">
+                        <div class="section">
+                            <h2><span class="emoji">🌎</span>Where is IoT Used?</h2>
+                            <div class="important-note"><strong>📊 Market Share Alert:</strong> Manufacturing & Business
+                                = 40%+ (Biggest market!)</div>
+                            <div class="info-grid">
+                                <div class="info-card app-card">
+                                    <h4>🏭 Manufacturing (40%+)</h4>
+                                    <p>Product tracking, supply chain efficiency, factory automation</p>
+                                </div>
+                                <div class="info-card app-card">
+                                    <h4>🏥 Healthcare</h4>
+                                    <p>Wearable health monitors, patient tracking, smart medical devices</p>
+                                </div>
+                                <div class="info-card app-card">
+                                    <h4>🛍️ Retail</h4>
+                                    <p>Inventory management, smart shelves, customer analytics</p>
+                                </div>
+                                <div class="info-card app-card">
+                                    <h4>🔒 Security</h4>
+                                    <p>Fingerprint scanners, surveillance systems, access control</p>
+                                </div>
+                                <div class="info-card app-card">
+                                    <h4>🏠 Smart Homes</h4>
+                                    <p>Connected appliances, energy management, home automation</p>
+                                </div>
+                                <div class="info-card app-card">
+                                    <h4>🚗 Transportation</h4>
+                                    <p>Connected cars, traffic management, fleet tracking</p>
+                                </div>
+                                <div class="info-card app-card">
+                                    <h4>🌱 Agriculture</h4>
+                                    <p>Smart irrigation, crop monitoring, livestock tracking</p>
+                                </div>
+                                <div class="info-card app-card">
+                                    <h4>🏙️ Smart Cities</h4>
+                                    <p>Traffic lights, waste management, environmental monitoring</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="quiz-1">
+                        <div class="quiz-section" data-score="0" data-total="10" data-answered="0">
+                            <h2><span class="emoji">🧠</span>CAT Exam Practice Quiz</h2>
+                            <div class="score-display">Score: 0/10</div>
+                            <div class="quiz-question">
+                                <p>1. What does "IoT" stand for?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Internet of Technology</div>
+                                    <div class="quiz-option" data-correct="true">Internet of Things</div>
+                                    <div class="quiz-option">Integrated Online Tools</div>
+                                    <div class="quiz-option">International Operations Technology</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>2. What is the main goal of IoT?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Make computers faster</div>
+                                    <div class="quiz-option" data-correct="true">Connect physical objects to share
+                                        information</div>
+                                    <div class="quiz-option">Replace human workers</div>
+                                    <div class="quiz-option">Create more websites</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>3. How many devices are expected to be connected in IoT networks?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">5 billion</div>
+                                    <div class="quiz-option" data-correct="true">Over 20 billion</div>
+                                    <div class="quiz-option">1 billion</div>
+                                    <div class="quiz-option">50 million</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>4. What are embedded systems in IoT?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Large computer servers</div>
+                                    <div class="quiz-option" data-correct="true">Tiny computers and sensors in everyday
+                                        objects</div>
+                                    <div class="quiz-option">Software applications</div>
+                                    <div class="quiz-option">Internet cables</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>5. Which market has the largest IoT usage (40%+)?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Healthcare</div>
+                                    <div class="quiz-option">Retail</div>
+                                    <div class="quiz-option" data-correct="true">Manufacturing and Business</div>
+                                    <div class="quiz-option">Entertainment</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>6. What does RFID stand for?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option" data-correct="true">Radio-Frequency Identification</div>
+                                    <div class="quiz-option">Rapid File Data Integration</div>
+                                    <div class="quiz-option">Remote Function Device Interface</div>
+                                    <div class="quiz-option">Real-time Feedback Digital Input</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>7. What are sensors in IoT systems?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Devices that perform actions</div>
+                                    <div class="quiz-option" data-correct="true">Devices that detect environmental
+                                        factors</div>
+                                    <div class="quiz-option">Communication protocols</div>
+                                    <div class="quiz-option">Power supplies</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>8. Which is NOT a wireless communication technology used in IoT?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Wi-Fi</div>
+                                    <div class="quiz-option">Bluetooth</div>
+                                    <div class="quiz-option">ZigBee</div>
+                                    <div class="quiz-option" data-correct="true">Ethernet Cable</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>9. What is a key requirement for IoT devices running on batteries?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">High processing speed</div>
+                                    <div class="quiz-option" data-correct="true">Low power consumption</div>
+                                    <div class="quiz-option">Large memory capacity</div>
+                                    <div class="quiz-option">High-resolution displays</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>10. What enables IoT to create smart cities?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Faster internet only</div>
+                                    <div class="quiz-option" data-correct="true">Connected infrastructure sharing data
+                                    </div>
+                                    <div class="quiz-option">More mobile phones</div>
+                                    <div class="quiz-option">Bigger computer screens</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page" id="page-2">
+            <div class="container">
+                <div class="header">
+                    <h1>🤝 How IoT Devices Talk</h1>
+                    <p>Networking & Addressing Explained</p>
+                </div>
+                <div class="content">
+                    <div class="nav-tabs">
+                        <button class="tab-btn active" data-tab="challenges">🚧 Challenges</button>
+                        <button class="tab-btn" data-tab="network-city">🏙️ Network City</button>
+                        <button class="tab-btn" data-tab="addressing-2">🗺️ Device Addressing</button>
+                        <button class="tab-btn" data-tab="quiz-2">🧠 Quiz</button>
+                    </div>
+                    <div class="tab-content active" id="challenges">
+                        <div class="section">
+                            <h2><span class="emoji">🤔</span>Big Problems to Solve</h2>
+                            <p>With billions of devices coming online, we face some big challenges to make sure they can
+                                all work together smoothly.</p>
+                            <div class="important-note">
+                                <h3>The Address Problem (Address Crunch)</h3>
+                                <p>Just like your house needs an address, every device needs an internet address. The
+                                    old system (called <strong>IPv4</strong>) is running out of addresses. This is a
+                                    critical problem for connecting billions of new IoT devices.</p>
+                            </div>
+                            <div class="important-note">
+                                <h3>Too Many Languages (Heterogeneity)</h3>
+                                <p>Devices use different technologies to connect, like <strong>Wi-Fi, Bluetooth, 4G/5G,
+                                        and ZigBee</strong>. It's like a room full of people speaking different
+                                    languages – we need ways to translate so they can understand each other.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="network-city">
+                        <div class="section">
+                            <h2><span class="emoji">🏗️</span>The Building Blocks of an IoT Network</h2>
+                            <p>Think of an IoT network like a giant Lego city. It has different parts that all work
+                                together.</p>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h3>IoT Node</h3>
+                                    <p class="analogy">Analogy: A single house or building</p>
+                                    <p>This is one IoT device on the network, like a smart lightbulb, a temperature
+                                        sensor, or a connected car.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>IoT LAN (Local Area Network)</h3>
+                                    <p class="analogy">Analogy: A neighborhood</p>
+                                    <p>A small, local network connecting nearby devices, like all the smart devices
+                                        inside your home or school.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>IoT Gateway</h3>
+                                    <p class="analogy">Analogy: The main road out of the neighborhood</p>
+                                    <p>A device that connects the local LAN (neighborhood) to the much larger WAN (the
+                                        whole city), allowing devices to communicate with the outside world.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>IoT WAN (Wide Area Network)</h3>
+                                    <p class="analogy">Analogy: The entire city</p>
+                                    <p>A large network that connects many different LANs (neighborhoods) together over a
+                                        large geographical area.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>IoT Proxy</h3>
+                                    <p class="analogy">Analogy: A security guard or translator</p>
+                                    <p>A server that can help with security, translate between different protocols, and
+                                        help local devices connect to the global internet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="addressing-2">
+                        <div class="section">
+                            <h2><span class="emoji">🗺️</span>How Do Devices Find Each Other?</h2>
+                            <p>Just like a city's postal system, the network has smart ways to manage addresses for all
+                                its devices.</p>
+                            <div class="important-note">
+                                <h3>Local Addresses vs. Global Addresses</h3>
+                                <p>Inside a LAN (neighborhood), devices have a local address. This same local address
+                                    (like "123 Main St") might exist in another LAN. This helps save unique global
+                                    addresses. The <strong>Gateway</strong> helps translate between these local and
+                                    global addresses.</p>
+                            </div>
+                            <div class="important-note">
+                                <h3>Handling Moving Devices (Mobility)</h3>
+                                <p>What if a device moves from one network to another (e.g., your phone connecting from
+                                    home Wi-Fi to college Wi-Fi)? It gets a new local address for the new network, but
+                                    it can keep its original identity. It's like you get a new mailing address when you
+                                    move, but you're still the same person!</p>
+                            </div>
+                            <div class="important-note">
+                                <h3>Multihoming</h3>
+                                <p>Sometimes a device is connected to two different networks at the same time (e.g.,
+                                    your phone is on Wi-Fi and 5G). This is <strong>multihoming</strong>. It's like
+                                    having two different roads to your house – if one is blocked, you can use the other.
+                                    This makes the connection much more reliable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="quiz-2">
+                        <div class="quiz-section" data-score="0" data-total="5" data-answered="0">
+                            <h2><span class="emoji">🧠</span>CAT Exam Practice Quiz #2</h2>
+                            <div class="score-display">Score: 0/5</div>
+                            <div class="quiz-question">
+                                <p>1. What is the "address crunch"?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Devices getting crushed by data</div>
+                                    <div class="quiz-option" data-correct="true">The old internet address system (IPv4)
+                                        is running out of unique addresses</div>
+                                    <div class="quiz-option">When a device has too many addresses</div>
+                                    <div class="quiz-option">A new type of energy-saving technology</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>2. What's the difference between an IoT LAN and an IoT WAN?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">A LAN is wireless and a WAN uses cables</div>
+                                    <div class="quiz-option">They are the same thing</div>
+                                    <div class="quiz-option" data-correct="true">A LAN is a small, local network (like a
+                                        house), while a WAN connects many LANs together (like a city)</div>
+                                    <div class="quiz-option">A LAN is for sensors and a WAN is for lightbulbs</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>3. What does an IoT Gateway do?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">It is the IoT device itself</div>
+                                    <div class="quiz-option" data-correct="true">It connects a local network (LAN) to a
+                                        larger network (WAN), like a bridge</div>
+                                    <div class="quiz-option">It provides power to other IoT devices</div>
+                                    <div class="quiz-option">It stores all the data from the devices</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>4. How does the network handle devices that move from one network to another?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">The device stops working</div>
+                                    <div class="quiz-option">The device keeps its old address forever</div>
+                                    <div class="quiz-option" data-correct="true">It gets a new local address in the new
+                                        network but keeps its core identity</div>
+                                    <div class="quiz-option">It must be manually re-registered</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>5. What is "multihoming"?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option" data-correct="true">When a single device is connected to
+                                        two or more different networks at the same time for reliability</div>
+                                    <div class="quiz-option">A device that can be used in multiple homes</div>
+                                    <div class="quiz-option">The process of assigning an address to a device for the
+                                        first time</div>
+                                    <div class="quiz-option">A network designed for mobile homes</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page" id="page-3">
+            <div class="container">
+                <div class="header">
+                    <h1>👂 The Senses of Things</h1>
+                    <p>A Guide to Sensors in IoT</p>
+                </div>
+                <div class="content">
+                    <div class="nav-tabs">
+                        <button class="tab-btn active" data-tab="what-are-sensors">🤔 What are Sensors?</button>
+                        <button class="tab-btn" data-tab="types-of-sensors">💡 Types of Sensors</button>
+                        <button class="tab-btn" data-tab="sensor-features">⭐ Sensor Features</button>
+                        <button class="tab-btn" data-tab="sensor-errors">🥴 Sensor Errors</button>
+                        <button class="tab-btn" data-tab="quiz-3">🧠 Quiz</button>
+                    </div>
+                    <div class="tab-content active" id="what-are-sensors">
+                        <div class="section">
+                            <h2><span class="emoji">🤔</span>What are Sensors?</h2>
+                            <p>Imagine you're playing hide-and-seek. Your eyes are like sensors—they help you "sense"
+                                things. In technology, sensors are little devices that "sense" the world around them,
+                                like temperature, motion, or light.</p>
+                            <div class="important-note"><strong>The Big Idea:</strong> Sensors are the "eyes and ears"
+                                of IoT devices. They collect information, which is then used by
+                                <strong>Actuators</strong> (the "hands") to perform an action. <br><em>Example: A soil
+                                    sensor (senses) detects dry soil, and an actuator (acts) turns on a water
+                                    sprinkler.</em>
+                            </div>
+                            <h3>Key Exam Points</h3>
+                            <p><strong>1. Building Blocks:</strong> <span
+                                    style="color: var(--highlight-color); font-weight: bold;">Sensors and
+                                    Actuators</span> are the two most important parts of any IoT system.</p>
+                            <p><strong>2. How they work:</strong> Sensors turn a physical property (like heat) into an
+                                electrical signal a computer can understand.</p>
+                            <p><strong>3. Sensor vs. Transducer:</strong> This is a common exam question!</p>
+                            <ul>
+                                <li>A <strong>Transducer</strong> is ANY device that converts one form of energy to
+                                    another.</li>
+                                <li>A <strong>Sensor</strong> is a SPECIAL type of transducer that converts a physical
+                                    quantity into an electrical signal.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="types-of-sensors">
+                        <div class="section">
+                            <h2><span class="emoji">💡</span>Common Types of Sensors</h2>
+                            <p>Just like you have different senses (sight, hearing, touch), there are many different
+                                kinds of sensors.</p>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h3>🏃</h3>
+                                    <h4>PIR Sensor</h4>
+                                    <p>Senses motion. Used in automatic lights and security alarms.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>🦇</h3>
+                                    <h4>Ultrasonic Sensor</h4>
+                                    <p>Uses sound waves to measure distance. Like how a bat "sees"!</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>📷</h3>
+                                    <h4>Camera Sensor</h4>
+                                    <p>A tiny digital eye that captures images or video.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>🔥</h3>
+                                    <h4>Smoke Sensor</h4>
+                                    <p>Detects smoke particles in the air for fire safety.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>🌡️</h3>
+                                    <h4>Temp/Humidity Sensor</h4>
+                                    <p>Measures how hot/cold it is and the moisture in the air.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>💡</h3>
+                                    <h4>Light Sensor</h4>
+                                    <p>Measures the brightness of the ambient light.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="sensor-features">
+                        <div class="section">
+                            <h2><span class="emoji">⭐</span>Important Sensor Features</h2>
+                            <p>To be useful, sensors need to have certain qualities. Think of them as superpowers!</p>
+                            <div class="important-note">
+                                <h3>Sensitivity</h3>
+                                <p>A sensor should only be sensitive to what it's supposed to measure. A temperature
+                                    sensor shouldn't react to light! It's focused on its one job.</p>
+                            </div>
+                            <div class="important-note">
+                                <h3>Resolution</h3>
+                                <p>This is the smallest change a sensor can notice. A high-resolution sensor is like
+                                    having super-sharp eyesight that can spot a tiny ant on the ground.</p>
+                            </div>
+                            <div class="important-note">
+                                <h3>Range</h3>
+                                <p>This is the minimum and maximum value a sensor can measure. For example, a
+                                    thermometer might have a range of -10°C to 100°C.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="sensor-errors">
+                        <div class="section">
+                            <h2><span class="emoji">🥴</span>Things That Can Go Wrong (Sensor Errors)</h2>
+                            <p>Even sensors can make mistakes! It's important to know about these common errors.</p>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h4>Sensitivity Error</h4>
+                                    <p>The sensor's output is not as strong as it should be for a given input.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h4>Offset Error</h4>
+                                    <p>The sensor is always off by the same amount (e.g., always reads 2°C too high).
+                                    </p>
+                                </div>
+                                <div class="info-card">
+                                    <h4>Drift</h4>
+                                    <p>The sensor's readings slowly change over time, even when nothing is changing.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h4>Noise</h4>
+                                    <p>The sensor's output has small, random fluctuations. Like trying to listen in a
+                                        noisy room!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="quiz-3">
+                        <div class="quiz-section" data-score="0" data-total="5" data-answered="0">
+                            <h2><span class="emoji">🧠</span>CAT Exam Practice Quiz #3</h2>
+                            <div class="score-display">Score: 0/5</div>
+                            <div class="quiz-question">
+                                <p>1. What are the two main building blocks of an IoT system?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Gateways and Routers</div>
+                                    <div class="quiz-option" data-correct="true">Sensors and Actuators</div>
+                                    <div class="quiz-option">Software and Hardware</div>
+                                    <div class="quiz-option">LAN and WAN</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>2. What does a sensor do?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">It performs a physical action</div>
+                                    <div class="quiz-option">It connects to the internet</div>
+                                    <div class="quiz-option" data-correct="true">It detects a physical change and
+                                        converts it to an electrical signal</div>
+                                    <div class="quiz-option">It stores data in the cloud</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>3. What's the main difference between a sensor and a transducer?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">There is no difference</div>
+                                    <div class="quiz-option" data-correct="true">A sensor is a specific type of
+                                        transducer that outputs an electrical signal</div>
+                                    <div class="quiz-option">A transducer is a type of sensor</div>
+                                    <div class="quiz-option">Transducers are bigger than sensors</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>4. Which sensor is like a bat, using sound to measure distance?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">PIR Sensor</div>
+                                    <div class="quiz-option">Smoke Sensor</div>
+                                    <div class="quiz-option">Camera Sensor</div>
+                                    <div class="quiz-option" data-correct="true">Ultrasonic Sensor</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>5. If a sensor is supposed to measure only temperature but is affected by bright
+                                    light, it has a problem with its...</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option" data-correct="true">Sensitivity</div>
+                                    <div class="quiz-option">Resolution</div>
+                                    <div class="quiz-option">Drift</div>
+                                    <div class="quiz-option">Noise</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page" id="page-4">
+            <div class="container">
+                <div class="header">
+                    <h1>⚙️ Actuators: Making Things Happen</h1>
+                    <p>The "Doers" of the IoT World</p>
+                </div>
+                <div class="content">
+                    <div class="nav-tabs">
+                        <button class="tab-btn active" data-tab="what-are-actuators">🤔 What are Actuators?</button>
+                        <button class="tab-btn" data-tab="types-of-actuators">💡 Types of Actuators</button>
+                        <button class="tab-btn" data-tab="quiz-4">🧠 Quiz</button>
+                    </div>
+                    <div class="tab-content active" id="what-are-actuators">
+                        <div class="section">
+                            <h2><span class="emoji">🤔</span>What is an Actuator?</h2>
+                            <p>Think about a remote-controlled car. When you press a button, the car moves. The part
+                                inside that makes the wheels turn is an <strong>actuator</strong>.</p>
+                            <p>In IoT, an actuator is the "doer". A sensor senses something, and an actuator acts on it.
+                            </p>
+                            <div class="important-note"><strong>Sensor vs. Actuator:</strong>
+                                <ul>
+                                    <li>A <strong>Sensor</strong> "senses" it's dark.</li>
+                                    <li>An <strong>Actuator</strong> "acts" by turning on a light.</li>
+                                </ul>
+                                <hr><strong>An actuator needs two things to work:</strong>
+                                <ol>
+                                    <li>A <strong>Control Signal</strong> (the command to "do something").</li>
+                                    <li>A <strong>Source of Energy</strong> (like a battery or electricity).</li>
+                                </ol>Its main job is to turn this energy into physical movement!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="types-of-actuators">
+                        <div class="section">
+                            <h2><span class="emoji">💡</span>Types of Actuators</h2>
+                            <p>Actuators use different energy sources to create movement. Here are the main types:</p>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h3>Hydraulic Actuators</h3>
+                                    <p class="source">Source: Pressurized Liquid (Oil)</p>
+                                    <p>These are incredibly strong because you can't easily compress a liquid. They
+                                        provide very high force.</p>
+                                    <p class="example">Example: The powerful arm of a construction digger.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Pneumatic Actuators</h3>
+                                    <p class="source">Source: Compressed Air</p>
+                                    <p>These are very fast and responsive. They are great for quick, repeated motions.
+                                    </p>
+                                    <p class="example">Example: The air brakes on a large truck or bus.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Electrical Actuators</h3>
+                                    <p class="source">Source: Electricity (Motors)</p>
+                                    <p>These are very common and precise. A common type is a solenoid, which acts like
+                                        an automated valve.</p>
+                                    <p class="example">Example: The small motor that makes your phone vibrate, or a
+                                        smart sprinkler valve.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Thermal/Magnetic Actuators</h3>
+                                    <p class="source">Source: Heat or Magnetism</p>
+                                    <p>These use heat or magnetic fields to create motion. Special Shape-Memory Alloys
+                                        (SMAs) can "remember" and return to a shape when heated.</p>
+                                    <p class="example">Example: The magnetic launch system in a coil gun, similar to the
+                                        concept for the Hyperloop train.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Mechanical Actuators</h3>
+                                    <p class="source">Source: Mechanical Parts (Gears, Chains)</p>
+                                    <p>These don't create energy, but they convert one type of motion into another
+                                        (e.g., circular motion to linear motion).</p>
+                                    <p class="example">Example: The rack and pinion steering system in a car.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Soft Actuators</h3>
+                                    <p class="source">Source: Flexible Materials (Polymers)</p>
+                                    <p>These are made of soft, flexible materials. They are perfect for tasks that
+                                        require a gentle touch.</p>
+                                    <p class="example">Example: A robotic hand designed to pick delicate strawberries
+                                        without crushing them.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="quiz-4">
+                        <div class="quiz-section" data-score="0" data-total="5" data-answered="0">
+                            <h2><span class="emoji">🧠</span>CAT Exam Practice Quiz #4</h2>
+                            <div class="score-display">Score: 0/5</div>
+                            <div class="quiz-question">
+                                <p>1. What are the two things an actuator needs to work?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">A sensor and a battery</div>
+                                    <div class="quiz-option" data-correct="true">A control signal and a source of energy
+                                    </div>
+                                    <div class="quiz-option">A motor and a gear</div>
+                                    <div class="quiz-option">Software and an internet connection</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>2. Which type of actuator is very strong because it uses a pressurized liquid?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Pneumatic</div>
+                                    <div class="quiz-option">Electrical</div>
+                                    <div class="quiz-option" data-correct="true">Hydraulic</div>
+                                    <div class="quiz-option">Soft Actuator</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>3. Which type of actuator uses compressed air and is known for being very fast?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option" data-correct="true">Pneumatic</div>
+                                    <div class="quiz-option">Mechanical</div>
+                                    <div class="quiz-option">Hydraulic</div>
+                                    <div class="quiz-option">Thermal</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>4. What is a real-life example of an electrical actuator?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">The arm on a construction digger</div>
+                                    <div class="quiz-option" data-correct="true">The motor that makes a phone vibrate
+                                    </div>
+                                    <div class="quiz-option">The brakes on a bus</div>
+                                    <div class="quiz-option">A robotic hand that picks strawberries</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>5. What makes soft actuators special?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">They are the strongest type of actuator</div>
+                                    <div class="quiz-option">They only work when they are hot</div>
+                                    <div class="quiz-option" data-correct="true">They are made of flexible materials and
+                                        are great for handling delicate objects</div>
+                                    <div class="quiz-option">They use compressed air to move</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page" id="page-5">
+            <div class="container">
+                <div class="header">
+                    <h1>🔗 Connecting the Dots</h1>
+                    <p>A Guide to IoT Networking</p>
+                </div>
+                <div class="content">
+                    <div class="nav-tabs">
+                        <button class="tab-btn active" data-tab="layers">🧬 IoT Layers</button>
+                        <button class="tab-btn" data-tab="teamwork">🤝 Teamwork & Gateways</button>
+                        <button class="tab-btn" data-tab="challenges-5">🤯 Big Challenges</button>
+                        <button class="tab-btn" data-tab="quiz-5">🧠 Quiz</button>
+                    </div>
+                    <div class="tab-content active" id="layers">
+                        <div class="section">
+                            <h2><span class="emoji">🧬</span>The Layers of an IoT System</h2>
+                            <p>You can think of a whole IoT system like the human body. It has different layers that
+                                each have a special job.</p>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h3>Sensing Layer</h3>
+                                    <p class="analogy">Analogy: Your Skin, Eyes & Ears</p>
+                                    <p>This layer is made of sensors that collect information from the physical world,
+                                        like temperature, motion, or light.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Network Layer</h3>
+                                    <p class="analogy">Analogy: Your Nervous System</p>
+                                    <p>This layer acts like the "roads" and "highways" (e.g., Wi-Fi, Bluetooth, Zigbee)
+                                        that carry all the data from the sensors to the brain.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Service Layer</h3>
+                                    <p class="analogy">Analogy: Your Brain</p>
+                                    <p>This is the "brain" of the operation. It receives the data, processes it, and
+                                        decides what to do with it.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Interface/Application Layer</h3>
+                                    <p class="analogy">Analogy: Your Hands & Mouth</p>
+                                    <p>This is how you interact with the system (e.g., a phone app) and how the system
+                                        takes action in the real world (e.g., an actuator turns on a light).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="teamwork">
+                        <div class="section">
+                            <h2><span class="emoji">🤝</span>Teamwork is Key (Interoperability)</h2>
+                            <p>Imagine buying a smart light from one company and a smart switch from another.
+                                <strong>Interoperability</strong> means they can still talk to each other and work
+                                together perfectly. It's super important for making sure all your different smart home
+                                gadgets can cooperate seamlessly.
+                            </p>
+                        </div>
+                        <div class="section">
+                            <h2><span class="emoji">🚪</span>The Role of Gateways</h2>
+                            <p>An IoT Gateway is like a <strong>translator or a bridge</strong>. Its main job is to help
+                                different kinds of devices that might speak different "languages" (use different
+                                connection protocols) to understand each other. It also connects the local group of
+                                devices to the bigger, global internet, keeping things organized and secure.</p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="challenges-5">
+                        <div class="section">
+                            <h2><span class="emoji">🤯</span>Big Challenges in IoT Networking</h2>
+                            <p>Connecting billions of devices isn't easy! Here are some of the biggest puzzles engineers
+                                are solving.</p>
+                            <div class="important-note">
+                                <h3>Scalability (So Many Devices!)</h3>
+                                <p>How do we build a network that can handle millions or even billions of devices all
+                                    trying to talk at once without crashing or slowing down?</p>
+                            </div>
+                            <div class="important-note">
+                                <h3>Heterogeneity (So Many Differences!)</h3>
+                                <p>IoT involves tons of different devices, connection types (Wi-Fi, Bluetooth, 5G,
+                                    etc.), and rules. Making them all work together is a huge challenge.</p>
+                            </div>
+                            <div class="important-note">
+                                <h3>Security and Privacy</h3>
+                                <p>With so many devices collecting personal information, it's extremely important to
+                                    make sure that data is kept secure from hackers and that people's privacy is always
+                                    protected.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="quiz-5">
+                        <div class="quiz-section" data-score="0" data-total="5" data-answered="0">
+                            <h2><span class="emoji">🧠</span>CAT Exam Practice Quiz #5</h2>
+                            <div class="score-display">Score: 0/5</div>
+                            <div class="quiz-question">
+                                <p>1. What are the four main layers of the IoT architecture described?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Top, Middle, Bottom, Side</div>
+                                    <div class="quiz-option" data-correct="true">Sensing, Network, Service, and
+                                        Interface/Application</div>
+                                    <div class="quiz-option">Wi-Fi, Bluetooth, Zigbee, Cellular</div>
+                                    <div class="quiz-option">Input, Process, Output, Storage</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>2. What is "interoperability"?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">How fast a device can operate</div>
+                                    <div class="quiz-option" data-correct="true">The ability of devices from different
+                                        companies to work together</div>
+                                    <div class="quiz-option">A type of security system</div>
+                                    <div class="quiz-option">A special kind of IoT sensor</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>3. In the body analogy, which layer is like the "brain"?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Sensing Layer</div>
+                                    <div class="quiz-option">Network Layer</div>
+                                    <div class="quiz-option" data-correct="true">Service Layer</div>
+                                    <div class="quiz-option">Interface Layer</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>4. What is the challenge of "scalability" in IoT?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Keeping the devices safe from hackers</div>
+                                    <div class="quiz-option" data-correct="true">Managing a huge number of devices on
+                                        one network</div>
+                                    <div class="quiz-option">Making devices from different brands work together</div>
+                                    <div class="quiz-option">Making the devices smaller</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>5. Which two are connection technologies used in the IoT Network Layer?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option" data-correct="true">Wi-Fi and Bluetooth</div>
+                                    <div class="quiz-option">Sensors and Actuators</div>
+                                    <div class="quiz-option">Apps and Services</div>
+                                    <div class="quiz-option">Security and Privacy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page" id="page-6">
+            <div class="container">
+                <div class="header">
+                    <h1>🎓 Introduction to IoT</h1>
+                    <p>Your Complete Guide for the CAT Exam</p>
+                </div>
+                <div class="content">
+                    <div class="nav-tabs">
+                        <button class="tab-btn active" data-tab="what-is-iot-6">🤔 What is IoT?</button>
+                        <button class="tab-btn" data-tab="how-it-works-6">⚙️ How it Works</button>
+                        <button class="tab-btn" data-tab="applications-6">🌎 Applications</button>
+                        <button class="tab-btn" data-tab="iot-and-friends-6">🤝 IoT & Friends</button>
+                        <button class="tab-btn" data-tab="quiz-6">🧠 Quiz & Tips</button>
+                    </div>
+                    <div class="tab-content active" id="what-is-iot-6">
+                        <div class="section">
+                            <h2><span class="emoji">🤔</span>What is IoT?</h2>
+                            <p>IoT is like giving "eyes," "ears," and a "voice" to everyday things (like your fridge or
+                                a car) so they can connect to the internet and become smart.</p>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h3>The Secret Sauce</h3>
+                                    <p>IoT is a mix of cool technologies:</p>
+                                    <ul>
+                                        <li>Tiny Computers</li>
+                                        <li>Cloud Computing (A giant online brain)</li>
+                                        <li>Big Data & Machine Learning</li>
+                                        <li>Networking</li>
+                                    </ul>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Where did the idea come from?</h3>
+                                    <p>The term became popular around 2005. The ITU Internet Report predicted a future
+                                        where devices, not just people, would create most of the internet traffic. Key
+                                        technologies like RFID, Nanotechnology, and Sensors made it possible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="how-it-works-6">
+                        <div class="section">
+                            <h2><span class="emoji">⚙️</span>How IoT Works & Evolves</h2>
+                            <h3>Special Characteristics</h3>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <p><strong>Clear Names:</strong> Every device needs a unique name or address so we
+                                        know exactly which one is talking.</p>
+                                </div>
+                                <div class="info-card">
+                                    <p><strong>Many Device Types:</strong> It includes devices that "sleep" to save
+                                        power, are mobile, and might not always be connected.</p>
+                                </div>
+                            </div>
+                            <h3>Timeline of Connected Devices</h3>
+                            <p>IoT didn't happen overnight! Here's how it grew:</p>
+                            <ul>
+                                <li><strong>1974:</strong> ATMs go online.</li>
+                                <li><strong>1991:</strong> The World Wide Web changes everything.</li>
+                                <li><strong>Early 2000s:</strong> Smart Meters talk to the power company.</li>
+                                <li><strong>Later:</strong> Digital Locks, Smart Healthcare, and even <strong>Smart
+                                        Dust</strong> (tiny computers smaller than a grain of sand!).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="applications-6">
+                        <div class="section">
+                            <h2><span class="emoji">🌎</span>Where is IoT Used?</h2>
+                            <h3>Market Share</h3>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h3>1. Manufacturing/Business (40.2%)</h3>
+                                    <p>Smart factories, tracking products, robots.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>2. Healthcare (30.3%)</h3>
+                                    <p>Health trackers, digital records.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>3. Retail (8.3%)</h3>
+                                    <p>Tracking inventory, smart shopping.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>4. Security (7.7%)</h3>
+                                    <p>Fingerprint/face unlock, remote sensors.</p>
+                                </div>
+                            </div>
+                            <h3>Cool Things IoT Can Do Today</h3>
+                            <p>Smart Parking, Smart Lighting, Waste Management, Forest Fire Detection, Air Pollution
+                                Monitoring, NFC Payment, and more!</p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="iot-and-friends-6">
+                        <div class="section">
+                            <h2><span class="emoji">🤝</span>IoT vs. Its Friends (M2M & WoT)</h2>
+                            <p>This is a very important topic for your exam!</p>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h3>IoT vs. M2M (Machine-to-Machine)</h3>
+                                    <p><strong>M2M</strong> is just machines talking to other machines, often on phone
+                                        networks (4G/5G). It's about collecting data.</p>
+                                    <p><strong>IoT is much bigger!</strong> M2M is just one part of IoT. IoT is more
+                                        about the internet and also includes things talking to people and apps.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>IoT vs. WoT (Web-of-Things)</h3>
+                                    <p><strong>WoT</strong> is a way to make IoT devices easy to use, by making them act
+                                        like websites. You use web tech (like HTML, APIs) to control them.</p>
+                                    <p><strong>IoT is the whole network.</strong> WoT is just one possible way for apps
+                                        to interact with that network. Some IoT systems might not even use the web.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="quiz-6">
+                        <div class="section">
+                            <h2><span class="emoji">🎯</span>Top Exam Tips</h2>
+                            <ul class="exam-list">
+                                <li>Know the simple definitions of <strong>IoT, M2M, and WoT</strong>.</li>
+                                <li>Be able to explain the <strong>key differences</strong> between them.</li>
+                                <li>Give examples of <strong>IoT applications</strong> (e.g., healthcare, smart cities).
+                                </li>
+                                <li>Remember the main <strong>enabling technologies</strong> (Big Data, AI,
+                                    Connectivity).</li>
+                                <li>Know a few historical milestones like <strong>ATMs and Smart Dust</strong>.</li>
+                                <li>Understand that "Things" are <strong>everyday objects</strong>, not just computers.
+                                </li>
+                                <li>Remember key characteristics like <strong>"unambiguous naming"</strong>.</li>
+                            </ul>
+                        </div>
+                        <div class="quiz-section" data-score="0" data-total="5" data-answered="0">
+                            <h2><span class="emoji">🧠</span>Final Practice Quiz</h2>
+                            <div class="score-display">Score: 0/5</div>
+                            <div class="quiz-question">
+                                <p>1. What is the main idea behind IoT?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Making the internet faster for computers.</div>
+                                    <div class="quiz-option" data-correct="true">Connecting everyday physical objects to
+                                        the internet to make them smart.</div>
+                                    <div class="quiz-option">A new type of social media.</div>
+                                    <div class="quiz-option">A technology for building robots only.</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>2. Which area uses IoT the most, with over 40% of the market share?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Healthcare</div>
+                                    <div class="quiz-option">Retail</div>
+                                    <div class="quiz-option" data-correct="true">Manufacturing and Business</div>
+                                    <div class="quiz-option">Security</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>3. What is the key difference between IoT and M2M?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">They are exactly the same.</div>
+                                    <div class="quiz-option" data-correct="true">M2M is a part of the much broader IoT,
+                                        which also includes things talking to people and apps.</div>
+                                    <div class="quiz-option">M2M uses the internet, while IoT uses phone networks.</div>
+                                    <div class="quiz-option">M2M is a newer technology than IoT.</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>4. What does "unambiguous naming" mean in IoT?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option" data-correct="true">Every device must have its own unique
+                                        name or address.</div>
+                                    <div class="quiz-option">All devices must have the same name.</div>
+                                    <div class="quiz-option">The names of devices are not important.</div>
+                                    <div class="quiz-option">Device names can be confusing.</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>5. What is the goal of WoT (Web-of-Things)?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">To replace the entire internet.</div>
+                                    <div class="quiz-option">To create a separate network only for things.</div>
+                                    <div class="quiz-option" data-correct="true">To make IoT devices easy to use by
+                                        making them act like websites.</div>
+                                    <div class="quiz-option">To focus only on machine-to-machine communication.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page" id="page-7">
+            <div class="container">
+                <div class="header">
+                    <h1>🌐 IoT Addressing & Connectivity</h1>
+                    <p>Your Guide to IPv4, IPv6, and How Billions of Devices Connect</p>
+                </div>
+                <div class="content">
+                    <div class="nav-tabs">
+                        <button class="tab-btn active" data-tab="problem-7">🤔 The Address Problem</button>
+                        <button class="tab-btn" data-tab="addressing-7">🗺️ Smart Addressing</button>
+                        <button class="tab-btn" data-tab="ipv4vs6-7">🆚 IPv4 vs. IPv6</button>
+                        <button class="tab-btn" data-tab="quiz-7">🧠 Quiz & Prep</button>
+                    </div>
+                    <div class="tab-content active" id="problem-7">
+                        <div class="section">
+                            <h2><span class="emoji">🤔</span>The "Address Crunch"</h2>
+                            <p>Imagine if every person, pet, and toy in the world needed a unique phone number. We'd run
+                                out fast! That's the "address crunch" for the internet. With 20-50 billion devices
+                                online, the old address system (IPv4) isn't big enough.</p>
+                            <h3>Key Connection Terms</h3>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h3>IoT Node</h3>
+                                    <p class="analogy">Analogy: One smart device, like your phone or a smart lightbulb.
+                                    </p>
+                                    <p>A single connected "thing" in the network.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>IoT LAN</h3>
+                                    <p class="analogy">Analogy: All the devices in your house connected to your Wi-Fi.
+                                    </p>
+                                    <p>A small, local network of devices.</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>IoT Gateway</h3>
+                                    <p class="analogy">Analogy: Your Wi-Fi router.</p>
+                                    <p>Connects your local network (LAN) to the bigger internet (WAN).</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>IoT Proxy</h3>
+                                    <p class="analogy">Analogy: A helpful translator or doorman.</p>
+                                    <p>An application that helps devices with local addresses talk to the global
+                                        internet, and can even process data for them.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="addressing-7">
+                        <div class="section">
+                            <h2><span class="emoji">🗺️</span>Smart Addressing & Mobility</h2>
+                            <h3>How to Save Addresses</h3>
+                            <p>To avoid running out of addresses, IoT networks use a clever trick. Nodes inside a local
+                                network (behind a gateway) get a <strong>Locally Unique (LU) address</strong>. This
+                                address is only valid inside that network. Another house can use the same local
+                                addresses for its own devices. This saves global addresses for the gateways themselves.
+                            </p>
+                            <h3>What if a Device Moves?</h3>
+                            <p>Imagine your whole apartment building moves to a new street. Its main address (the WAN
+                                address) changes. But thanks to <strong>Unique Local Addresses (ULA)</strong>, your
+                                apartment number (the LAN address of the nodes) can stay the same! The gateway connects
+                                to a remote "anchor point" to make sure it can still be found on the internet, even
+                                after moving.</p>
+                            <h3>Multi-homing: The Backup Plan</h3>
+                            <p>This is like having both a front door and a back door connected to different streets. A
+                                device or network can connect to multiple networks at the same time. If one connection
+                                fails, it can use the other. This makes the connection much more reliable.</p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="ipv4vs6-7">
+                        <div class="section">
+                            <h2><span class="emoji">🆚</span>IPv4 vs. IPv6: The Big Upgrade</h2>
+                            <p><strong>IPv4</strong> is like an old system of short phone numbers that we've nearly run
+                                out of. <strong>IPv6</strong> is the new system with super-long numbers we will
+                                practically never run out of. It's essential for the future of IoT.</p>
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>IPv4</th>
+                                        <th>IPv6</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Address Length</td>
+                                        <td>32 bits</td>
+                                        <td>128 bits</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Number of Addresses</td>
+                                        <td>~4.3 billion</td>
+                                        <td>Vast (3.4 x 10^38)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Notation</td>
+                                        <td>Dotted Decimal (192.168.1.1)</td>
+                                        <td>Hexadecimal (2001:db8::1)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Security (IPSec)</td>
+                                        <td>Optional</td>
+                                        <td><strong>Compulsory (Built-in)</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Header</td>
+                                        <td>Variable size, has checksum</td>
+                                        <td>Fixed size, no checksum (faster)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Broadcast</td>
+                                        <td>Yes</td>
+                                        <td>No (uses Multicast instead)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3>The Transition Problem</h3>
+                            <p>Since the world still runs mostly on IPv4, we need temporary solutions to make IPv6 work
+                                everywhere. Common "makeshift" solutions include <strong>IPv6 to IPv4
+                                    Translation</strong> and <strong>Tunneling</strong> (wrapping IPv6 data inside IPv4
+                                data to cross IPv4 networks).</p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="quiz-7">
+                        <div class="section">
+                            <h2><span class="emoji">🎯</span>Top Exam Topics</h2>
+                            <ul>
+                                <li>The difference between an <strong>IoT Gateway</strong> and an <strong>IoT
+                                        Proxy</strong>.</li>
+                                <li>Why the "address crunch" led to the need for <strong>IPv6</strong>.</li>
+                                <li>The key advantages of IPv6 over IPv4, especially <strong>address space</strong> and
+                                    built-in <strong>IPSec security</strong>.</li>
+                                <li>How <strong>Locally Unique (LU) addresses</strong> help conserve the global address
+                                    space.</li>
+                                <li>The concept of <strong>Multi-homing</strong> for network reliability.</li>
+                                <li>The purpose of makeshift solutions like <strong>tunneling</strong> and
+                                    <strong>translation</strong> during the IPv4-to-IPv6 transition.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="quiz-section" data-score="0" data-total="5" data-answered="0">
+                            <h2><span class="emoji">🧠</span>Final Practice Quiz</h2>
+                            <div class="score-display">Score: 0/5</div>
+                            <div class="quiz-question">
+                                <p>1. What is the primary reason for the "address crunch" in IoT?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Devices are getting bigger.</div>
+                                    <div class="quiz-option" data-correct="true">The massive number of new devices
+                                        connecting to the internet is exhausting the limited IPv4 addresses.</div>
+                                    <div class="quiz-option">IPv6 is too difficult to implement.</div>
+                                    <div class="quiz-option">People are using too many email addresses.</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>2. What is a key advantage of IPv6 over IPv4 for IoT security?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">It uses a smaller header.</div>
+                                    <div class="quiz-option">It has fewer addresses.</div>
+                                    <div class="quiz-option" data-correct="true">IPSec (IP Security) is built-in and
+                                        compulsory, not optional.</div>
+                                    <div class="quiz-option">It allows for broadcast messages.</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>3. In IoT, what is the main function of a Gateway?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">To act as a sensor.</div>
+                                    <div class="quiz-option" data-correct="true">To connect a local IoT network (LAN) to
+                                        the wider internet (WAN).</div>
+                                    <div class="quiz-option">To provide power to the nodes.</div>
+                                    <div class="quiz-option">To run applications directly on the device.</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>4. What is "multi-homing" in an IoT context?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option" data-correct="true">Connecting a node or network to
+                                        multiple networks at once for better reliability.</div>
+                                    <div class="quiz-option">A device that can be used in multiple homes.</div>
+                                    <div class="quiz-option">Assigning a very long IPv6 address.</div>
+                                    <div class="quiz-option">The process of a device moving from one network to another.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>5. How do Locally Unique (LU) addresses help solve the address crunch?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">They are shorter than global addresses.</div>
+                                    <div class="quiz-option">They are more secure than global addresses.</div>
+                                    <div class="quiz-option" data-correct="true">They are only valid within a local
+                                        network, allowing the same addresses to be reused in different networks.</div>
+                                    <div class="quiz-option">They can communicate directly with any device on the
+                                        internet.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page" id="page-8">
+            <div class="container">
+                <div class="header">
+                    <h1>🎓 The Complete IoT Study Guide</h1>
+                    <p>Sensors, Actuators, Networking & More for Your CAT Exam</p>
+                </div>
+                <div class="content">
+                    <div class="nav-tabs">
+                        <button class="tab-btn active" data-tab="sensors-8">👂 Sensors</button>
+                        <button class="tab-btn" data-tab="actuators-8">💪 Actuators</button>
+                        <button class="tab-btn" data-tab="networking-8">🌐 Networking</button>
+                        <button class="tab-btn" data-tab="quiz-8">🧠 Quiz & Tips</button>
+                    </div>
+                    <div class="tab-content active" id="sensors-8">
+                        <div class="section">
+                            <h2><span class="emoji">👂</span>Part 1: Sensors – The "Eyes and Ears" of IoT</h2>
+                            <p>A sensor is like a tiny detective. It senses changes in the world around it.</p>
+                            <div class="fact-box"><strong>Fact for Exam:</strong> A sensor detects a physical property
+                                (like heat or light) and converts it into an electrical signal that a computer can
+                                understand.</div>
+                            <h3>Key Sensor Features</h3>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h3>Sensitivity & Selectivity</h3>
+                                    <p>A good sensor only cares about what it's supposed to measure (e.g., a temperature
+                                        sensor ignores sound).</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Resolution</h3>
+                                    <p>How small a change it can detect. High resolution is like a ruler with millimeter
+                                        markings—very precise!</p>
+                                </div>
+                            </div>
+                            <h3>Types of Sensors</h3>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h3>Analog vs. Digital</h3>
+                                    <p><strong>Analog:</strong> Smooth, continuous output (like a dimmer switch).</p>
+                                    <p><strong>Digital:</strong> "On" or "Off" output (like a normal light switch).</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Scalar vs. Vector</h3>
+                                    <p><strong>Scalar:</strong> Measures only "how much" (e.g., 25°C).</p>
+                                    <p><strong>Vector:</strong> Measures "how much" AND "which direction" (e.g., phone
+                                        accelerometer).</p>
+                                </div>
+                            </div>
+                            <h3>Sensor Errors (Things that can go wrong)</h3>
+                            <p><strong>Offset/Bias:</strong> Always off by a little bit (like a scale that reads 1kg
+                                when empty).<br><strong>Drift:</strong> Readings slowly change over time, even when
+                                nothing is happening.<br><strong>Noise:</strong> Random, "jiggly"
+                                readings.<br><strong>Hysteresis:</strong> Gives a different reading going up vs. going
+                                down (like a sticky door).</p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="actuators-8">
+                        <div class="section">
+                            <h2><span class="emoji">💪</span>Part 2: Actuators – The "Muscles" of IoT</h2>
+                            <p>An actuator is like a machine's muscle. It receives a signal and acts on it, creating
+                                movement or control.</p>
+                            <div class="fact-box"><strong>Fact for Exam:</strong> An actuator converts a control signal
+                                and a source of energy into a physical motion.</div>
+                            <h3>Types of Actuators</h3>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <h3>Hydraulic & Pneumatic</h3>
+                                    <p><strong>Hydraulic:</strong> Uses liquid (oil) for very strong force (e.g.,
+                                        excavator arm).</p>
+                                    <p><strong>Pneumatic:</strong> Uses compressed air for quick movements (e.g.,
+                                        factory robots).</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Electric</h3>
+                                    <p>Uses a motor to turn electricity into motion. Very common, cheap, and clean
+                                        (e.g., your phone's vibration motor).</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Mechanical</h3>
+                                    <p>Uses gears and levers to change one type of motion into another (e.g., car
+                                        steering).</p>
+                                </div>
+                                <div class="info-card">
+                                    <h3>Soft Actuators</h3>
+                                    <p>Made of flexible materials. Great for delicate tasks (e.g., a robot hand picking
+                                        strawberries).</p>
+                                    <p><strong>LAPs (Light Activated Polymers)</strong> are a special type that can be
+                                        controlled instantly and remotely by light.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="networking-8">
+                        <div class="section">
+                            <h2><span class="emoji">🌐</span>Part 3: Networking – How IoT Things "Talk"</h2>
+                            <p>IoT Networking is how all the smart devices connect to each other and to the internet to
+                                share information and work as a team.</p>
+                            <h3>The Big Parts of an IoT System</h3>
+                            <ol>
+                                <li><strong>Device (The Thing):</strong> The sensor or actuator.</li>
+                                <li><strong>Local Network:</strong> Nearby communication (Wi-Fi, Bluetooth).</li>
+                                <li><strong>Internet:</strong> The global network.</li>
+                                <li><strong>Backend Services:</strong> Servers that store and process data.</li>
+                                <li><strong>Applications:</strong> The app on your phone to see/control things.</li>
+                            </ol>
+                            <div class="fact-box">
+                                <h3>What is an IoT Gateway?</h3>
+                                <p><strong>Fact for Exam:</strong> A Gateway is a "bridge" or "translator" that connects
+                                    local IoT devices to the wider internet. It handles routing, protocol conversion,
+                                    and security.</p>
+                            </div>
+                            <h3>Key Challenges in IoT</h3>
+                            <p><strong>Security:</strong> Keeping devices safe from
+                                hackers.<br><strong>Scalability:</strong> Handling billions of
+                                devices.<br><strong>Energy Efficiency:</strong> Making batteries last
+                                longer.<br><strong>Interoperability:</strong> Making devices from different companies
+                                work together.</p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="quiz-8">
+                        <div class="section">
+                            <h2><span class="emoji">🎯</span>Top Exam Tips</h2>
+                            <ul class="exam-list">
+                                <li>Know the difference between a <strong>Sensor</strong> (senses) and an
+                                    <strong>Actuator</strong> (acts).
+                                </li>
+                                <li>Remember the difference between <strong>Scalar</strong> (how much) and
+                                    <strong>Vector</strong> (how much & which way) sensors.
+                                </li>
+                                <li>Be able to name a few types of actuators and their energy source (e.g.,
+                                    <strong>Hydraulic = liquid</strong>, <strong>Pneumatic = air</strong>,
+                                    <strong>Electric = motor</strong>).
+                                </li>
+                                <li>Understand the role of an <strong>IoT Gateway</strong> as a bridge to the internet.
+                                </li>
+                                <li>Be aware of the main IoT challenges, especially <strong>Security, Scalability, and
+                                        Interoperability</strong>.</li>
+                            </ul>
+                        </div>
+                        <div class="quiz-section" data-score="0" data-total="5" data-answered="0">
+                            <h2><span class="emoji">🧠</span>Final Practice Quiz</h2>
+                            <div class="score-display">Score: 0/5</div>
+                            <div class="quiz-question">
+                                <p>1. What is the main job of a sensor in an IoT system?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">To move a part of a machine.</div>
+                                    <div class="quiz-option" data-correct="true">To detect a physical property and
+                                        convert it into an electrical signal.</div>
+                                    <div class="quiz-option">To connect the device to the internet.</div>
+                                    <div class="quiz-option">To provide power to the device.</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>2. An accelerometer in your phone that detects which way it's tilted is an example of
+                                    what kind of sensor?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Scalar Sensor</div>
+                                    <div class="quiz-option">Analog Sensor</div>
+                                    <div class="quiz-option" data-correct="true">Vector Sensor</div>
+                                    <div class="quiz-option">Digital Sensor</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>3. Which type of actuator would be best for a giant, powerful crane arm that needs to
+                                    lift heavy things?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Electric</div>
+                                    <div class="quiz-option" data-correct="true">Hydraulic</div>
+                                    <div class="quiz-option">Soft Actuator</div>
+                                    <div class="quiz-option">Pneumatic</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>4. What is the primary role of an IoT Gateway?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option" data-correct="true">To act as a bridge connecting local
+                                        devices to the internet.</div>
+                                    <div class="quiz-option">To sense the temperature of a room.</div>
+                                    <div class="quiz-option">To make a robot's arm move.</div>
+                                    <div class="quiz-option">To store all the data from sensors.</div>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <p>5. The challenge of making sure devices from different companies (like a Samsung
+                                    smart light and a Philips smart switch) can work together is called:</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Scalability</div>
+                                    <div class="quiz-option">Security</div>
+                                    <div class="quiz-option">Energy Efficiency</div>
+                                    <div class="quiz-option" data-correct="true">Interoperability</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page" id="page-9">
+            <div class="container">
+                <div class="header">
+                    <h1>IoT Agent Training Manual</h1>
+                    <p>TOP SECRET - FOR YOUR EYES ONLY</p>
+                </div>
+                <div class="mission">
+                    <h2 class="mission-title"><span>🌍</span>Mission 1: The Big Picture</h2>
+                    <p>Welcome, recruit. Your first mission is to understand our primary field of operation: The
+                        Internet of Things (IoT). This isn't just about computers anymore. This is about a world where
+                        everything is connected.</p>
+                    <div class="intel">
+                        <h4>Field Intel: What is IoT?</h4>
+                        <p>Simply put, IoT is about connecting everyday physical objects to the internet. Think of it as
+                            giving a "voice" and a "brain" to everything from your backpack to a factory machine. Our
+                            goal is to create a giant network where trillions of objects can sense their surroundings,
+                            talk to each other, and share information to make the world smarter and more efficient.</p>
+                    </div>
+                    <div class="intel">
+                        <h4>Field Intel: How it Works</h4>
+                        <p>We install tiny computers and sensors—called <strong>embedded systems</strong>—into normal
+                            objects. This is the secret sauce that gets them online. These gadgets are the building
+                            blocks for creating smart homes, smart cities, and a future you've only seen in movies.</p>
+                    </div>
+                    <div class="quiz-section" data-score="0" data-total="1" data-answered="0">
+                        <h3>Field Challenge #1</h3>
+                        <div class="quiz-question challenge-item">
+                            <p><strong>Myth Busting:</strong> Is the following statement Fact or Fiction?</p>
+                            <p class="riddle">"The number of people on Earth is far greater than the number of connected
+                                IoT devices."</p>
+                            <div class="quiz-options"><button class="quiz-option">Fact</button><button
+                                    class="quiz-option" data-correct="true">Fiction</button></div>
+                            <div class="feedback">
+                                <p><strong>Feedback:</strong> Correct! The number of IoT devices already far surpasses
+                                    the human population. Great work, Agent.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission">
+                    <h2 class="mission-title"><span>🔧</span>Mission 2: Your Gadget Toolkit</h2>
+                    <p>Every agent needs their gadgets. In IoT, our two most important tools are
+                        <strong>Sensors</strong> and <strong>Actuators</strong>. Master these, and you can control any
+                        environment. Ready to learn about the "eyes, ears, and muscles" of IoT?
+                    </p>
+                    <div class="intel">
+                        <h4>Gadget Profile: Sensors (The Eyes & Ears)</h4>
+                        <p>A <strong>Sensor</strong> detects or "senses" a change in the world (like temperature,
+                            motion, or light) and turns it into data we can use. It's how our systems gather intel.</p>
+                    </div>
+                    <div class="intel">
+                        <h4>Gadget Profile: Actuators (The Muscles)</h4>
+                        <p>An <strong>Actuator</strong> gets a signal and then acts. It's the "doer" that makes
+                            something happen in the real world, like locking a door, turning on a light, or moving a
+                            robot arm.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>Field Challenge #2</h3>
+                        <div class="challenge-item">
+                            <p><strong>System Builder:</strong> Your mission is to create an automated security light
+                                system that turns on when an intruder is detected at night. Which two gadgets do you
+                                need?</p><button class="reveal-btn">Reveal Answer</button>
+                            <div class="feedback">
+                                <p><strong>Answer:</strong> You need a <strong>PIR Sensor</strong> (to detect motion)
+                                    and an <strong>Electrical Actuator</strong> (to turn on the light). The sensor
+                                    gathers the intel, and the actuator performs the action. Mission accomplished!</p>
+                            </div>
+                        </div>
+                        <div class="challenge-item">
+                            <p><strong>Gadget Identifier:</strong> Identify this gadget from its field report.</p>
+                            <p class="riddle">"I use pressurized liquid to create incredibly strong movements. You'll
+                                find me on heavy machinery like construction diggers. What am I?"</p><button
+                                class="reveal-btn">Reveal Answer</button>
+                            <div class="feedback">
+                                <p><strong>Answer:</strong> I am a <strong>Hydraulic Actuator</strong>. My power comes
+                                    from liquid, making me one of the strongest muscles in the toolkit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission">
+                    <h2 class="mission-title"><span>📡</span>Mission 3: The Secret Network</h2>
+                    <p>Our gadgets are useless if they can't communicate. This mission covers the secret network that
+                        connects everything. Think of it like a city map for our data.</p>
+                    <div class="intel">
+                        <h4>Network Blueprint:</h4>
+                        <ul>
+                            <li><strong>IoT Node:</strong> A single "house" in the city (one smart device).</li>
+                            <li><strong>IoT LAN:</strong> A "neighborhood" where nearby devices talk (your home Wi-Fi).
+                            </li>
+                            <li><strong>IoT Gateway:</strong> The "bridge" connecting your neighborhood to the internet.
+                                It's a critical translator.</li>
+                            <li><strong>IoT WAN:</strong> The entire "city" network, connecting all the neighborhoods.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>Field Challenge #3</h3>
+                        <div class="challenge-item">
+                            <p><strong>Fill-in-the-Blank:</strong> Complete the intel report.</p>
+                            <p class="riddle">"With billions of devices coming online, we are running out of the old
+                                internet addresses (IPv4). This problem is known as the 'address ______'."</p><button
+                                class="reveal-btn">Reveal Answer</button>
+                            <div class="feedback">
+                                <p><strong>Answer:</strong> The 'address <strong>crunch</strong>'. This is why we are
+                                    moving to the new IPv6 system, which has enough addresses for every gadget we could
+                                    ever imagine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission">
+                    <h2 class="mission-title"><span>💥</span>Mission 4: The Final Bosses</h2>
+                    <p>Every field has its major threats. In IoT, these are the "final bosses" we must constantly battle
+                        to ensure our systems are successful and safe. Understanding them is key to victory.</p>
+                    <div class="intel">
+                        <h4>Threat Analysis:</h4>
+                        <ul>
+                            <li><strong>The Scalability Monster:</strong> How do you build a network that can handle
+                                billions of devices without breaking?</li>
+                            <li><strong>The Interoperability Puzzle:</strong> How do you make gadgets from different
+                                manufacturers work together as a team?</li>
+                            <li><strong>The Security Hydra:</strong> With so many connected devices, how do you protect
+                                them all from hackers and keep private data safe? This is our highest priority.</li>
+                        </ul>
+                    </div>
+                    <div class="quiz-section" data-score="0" data-total="1" data-answered="0">
+                        <h3>Field Challenge #4</h3>
+                        <div class="quiz-question challenge-item">
+                            <p><strong>Myth Busting:</strong> Is the following statement Fact or Fiction?</p>
+                            <p class="riddle">"If all my smart home devices are made by the same company, I don't need
+                                to worry about interoperability."</p>
+                            <div class="quiz-options"><button class="quiz-option"
+                                    data-correct="true">Fact</button><button class="quiz-option">Fiction</button></div>
+                            <div class="feedback">
+                                <p><strong>Feedback:</strong> Correct! In this specific case, interoperability isn't a
+                                    problem. But the moment you add a device from another brand, the puzzle begins.
+                                    Sharp thinking!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="page-navigation">
+        <button id="prev-btn" class="nav-arrow" disabled>&larr; Previous</button>
+        <span id="page-indicator">Page 1 / 9</span>
+        <button id="next-btn" class="nav-arrow">Next &rarr;</button>
+    </footer>
+
+</body>
+
+</html>
