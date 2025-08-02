@@ -1,13 +1,56 @@
 :root {
-    --primary-bg: #f8f9fa;
-    --secondary-bg: #ffffff;
-    --accent-color: #007bff;
-    --highlight-color: #17a2b8;
-    --text-color: #212529;
-    --text-muted-color: #6c757d;
-    --correct-color: #28a745;
-    --wrong-color: #dc3545;
-    --border-color: #dee2e6;
+    /* --- Brand & Accent Colors --- */
+    --accent-color: #3b82f6;
+    /* Vivid Blue */
+    --accent-color-dark: #2563eb;
+    /* Darker Blue */
+    --accent-color-hover: #1d4ed8;
+    /* Hover Blue */
+    --highlight-color: #60a5fa;
+    /* Light Blue Highlight */
+
+    /* --- Status Colors --- */
+    --correct-color: #16a34a;
+    /* Strong Green */
+    --correct-text-dark: #f0fdf4;
+    --correct-bg-light: rgba(22, 163, 74, 0.2);
+    --feedback-bg-color: #dcfce7;
+    --wrong-color: #dc2626;
+    /* Strong Red */
+    --wrong-text-dark: #fef2f2;
+    --wrong-bg-light: rgba(220, 38, 38, 0.2);
+
+    /* --- Text Colors --- */
+    --text-color: #18181b;
+    /* Near Black */
+    --text-muted-color: #52525b;
+    /* Dark Grey */
+    --color-white: #ffffff;
+
+    /* --- Background Colors --- */
+    --primary-bg: #d4d4d8;
+    /* Medium Grey Body */
+    --secondary-bg: #e4e4e7;
+    /* Light Grey Container */
+    --section-bg-color: #e4e4e7;
+    --card-bg-color: #e4e4e7;
+    --ui-background-light: #f4f4f5;
+    /* Very Light Grey for UI */
+    --color-transparent: transparent;
+
+    /* --- Gradient & Shadow Colors --- */
+    --header-gradient-start: #e4e4e7;
+    --header-gradient-end: #d4d4d8;
+    --shadow-color-main: rgba(0, 0, 0, 0.08);
+    --shadow-color-hover: rgba(0, 0, 0, 0.16);
+    --shadow-color-footer: rgba(0, 0, 0, 0.05);
+    --accent-shadow-color: rgba(59, 130, 246, 0.25);
+
+    /* --- Border & Utility Colors --- */
+    --border-color: #a1a1aa;
+    /* Medium Grey Border */
+
+    /* --- Font --- */
     --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -25,7 +68,6 @@ body {
     margin: 0;
     padding: 20px;
     padding-bottom: 80px;
-    /* Space for footer */
     line-height: 1.7;
 }
 
@@ -68,19 +110,19 @@ ol {
     background-color: var(--secondary-bg);
     border: 1px solid var(--border-color);
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px var(--shadow-color-main);
     overflow: hidden;
 }
 
 .header {
-    background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+    background: linear-gradient(135deg, var(--header-gradient-start), var(--header-gradient-end));
     padding: 25px;
     text-align: center;
     border-bottom: 2px solid var(--accent-color);
 }
 
 .header h1 {
-    color: #004085;
+    color: var(--accent-color-dark);
     margin: 0;
     font-size: 2.2em;
     text-transform: uppercase;
@@ -109,7 +151,7 @@ ol {
 
 .tab-btn {
     padding: 10px 20px;
-    background: #e9ecef;
+    background: var(--ui-background-light);
     color: var(--text-color);
     border: none;
     border-radius: 25px;
@@ -121,15 +163,15 @@ ol {
 
 .tab-btn:hover {
     background: var(--highlight-color);
-    color: white;
+    color: var(--color-white);
     transform: translateY(-2px);
 }
 
 .tab-btn.active {
     background: var(--accent-color);
-    color: white;
+    color: var(--color-white);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+    box-shadow: 0 4px 15px var(--accent-shadow-color);
 }
 
 .tab-content {
@@ -143,7 +185,7 @@ ol {
 /* --- Content Sections --- */
 .section,
 .mission {
-    background-color: #fdfdff;
+    background-color: var(--section-bg-color);
     margin-bottom: 25px;
     border-radius: 15px;
     padding: 25px;
@@ -170,7 +212,7 @@ ol {
 .important-note,
 .intel,
 .fact-box {
-    background-color: #e3f2fd;
+    background-color: var(--header-gradient-start);
     border-left: 4px solid var(--accent-color);
     padding: 15px;
     margin: 20px 0;
@@ -190,7 +232,7 @@ ol {
 }
 
 .info-card {
-    background: #f1f3f5;
+    background: var(--card-bg-color);
     padding: 20px;
     border-radius: 10px;
     border: 1px solid var(--border-color);
@@ -199,7 +241,7 @@ ol {
 
 .info-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 25px var(--shadow-color-hover);
 }
 
 .info-card h4 {
@@ -210,7 +252,7 @@ ol {
 
 .info-card.point {
     background: linear-gradient(135deg, var(--accent-color), var(--highlight-color));
-    color: white;
+    color: var(--color-white);
     font-weight: 500;
 }
 
@@ -226,7 +268,7 @@ p.riddle {
 /* --- Quiz & Challenge Styles --- */
 .quiz-section,
 .field-challenge {
-    background-color: transparent;
+    background-color: var(--color-transparent);
     border: 1px solid var(--border-color);
     padding: 20px;
     margin-top: 25px;
@@ -237,7 +279,7 @@ p.riddle {
 .challenge-item {
     margin-bottom: 20px;
     padding: 15px;
-    background: #f8f9fa;
+    background: var(--header-gradient-end);
     border-radius: 10px;
 }
 
@@ -265,20 +307,20 @@ p.riddle {
 .reveal-btn:hover {
     background: var(--highlight-color);
     border-color: var(--highlight-color);
-    color: white;
+    color: var(--color-white);
 }
 
 .quiz-option.correct {
-    background-color: rgba(40, 167, 69, 0.15);
+    background-color: var(--correct-bg-light);
     border-color: var(--correct-color);
-    color: #155724;
+    color: var(--correct-text-dark);
     font-weight: bold;
 }
 
 .quiz-option.wrong {
-    background-color: rgba(220, 53, 69, 0.15);
+    background-color: var(--wrong-bg-light);
     border-color: var(--wrong-color);
-    color: #721c24;
+    color: var(--wrong-text-dark);
 }
 
 .score-display {
@@ -287,7 +329,7 @@ p.riddle {
     font-weight: bold;
     margin: 20px 0;
     padding: 15px;
-    background: #e9ecef;
+    background: var(--ui-background-light);
     border-radius: 10px;
 }
 
@@ -296,9 +338,9 @@ p.riddle {
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #d4edda;
+    background-color: var(--feedback-bg-color);
     border-left: 4px solid var(--correct-color);
-    color: #155724;
+    color: var(--correct-text-dark);
 }
 
 .exam-list {
@@ -322,7 +364,7 @@ p.riddle {
 }
 
 .comparison-table th {
-    background-color: #e9ecef;
+    background-color: var(--ui-background-light);
 }
 
 /* --- Page Navigation Footer --- */
@@ -337,13 +379,13 @@ p.riddle {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 -5px 15px var(--shadow-color-footer);
     z-index: 1000;
 }
 
 .nav-arrow {
     background: var(--accent-color);
-    color: white;
+    color: var(--color-white);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -354,11 +396,11 @@ p.riddle {
 }
 
 .nav-arrow:hover {
-    background-color: #0056b3;
+    background-color: var(--accent-color-hover);
 }
 
 .nav-arrow:disabled {
-    background-color: #6c757d;
+    background-color: var(--text-muted-color);
     opacity: 0.6;
     cursor: not-allowed;
 }

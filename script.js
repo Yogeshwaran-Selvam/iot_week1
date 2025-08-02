@@ -14,6 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const revealButtons = document.querySelectorAll('.reveal-btn');
 
     // --- Page Navigation Logic ---
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowRight') {
+            leftMove();
+        } else if (event.key === 'ArrowLeft') {
+            rightMove();
+        } if (!event.shiftKey || (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft')) {
+            return;
+        }
+    });
+
     function showPage(index) {
         pages.forEach((page, i) => {
             page.classList.toggle('active', i === index);
@@ -29,17 +39,21 @@ document.addEventListener('DOMContentLoaded', () => {
         nextBtn.disabled = currentPageIndex === totalPages - 1;
     }
 
-    nextBtn.addEventListener('click', () => {
+    nextBtn.addEventListener('click', () => leftMove());
+
+    prevBtn.addEventListener('click', () => rightMove());
+
+    function leftMove() {
         if (currentPageIndex < totalPages - 1) {
             showPage(currentPageIndex + 1);
         }
-    });
+    }
 
-    prevBtn.addEventListener('click', () => {
+    function rightMove() {
         if (currentPageIndex > 0) {
             showPage(currentPageIndex - 1);
         }
-    });
+    }
 
     // --- Tab Switching Logic ---
     tabButtons.forEach(button => {
