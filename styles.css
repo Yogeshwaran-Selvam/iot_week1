@@ -1,54 +1,53 @@
 :root {
     /* --- Brand & Accent Colors --- */
-    --accent-color: #3b82f6;
-    /* Vivid Blue */
-    --accent-color-dark: #2563eb;
-    /* Darker Blue */
-    --accent-color-hover: #1d4ed8;
-    /* Hover Blue */
-    --highlight-color: #60a5fa;
-    /* Light Blue Highlight */
+    --accent-color: #38bdf8;
+    /* Ice Blue */
+    --accent-color-dark: #0ea5e9;
+    /* Darker Ice Blue */
+    --accent-color-hover: #7dd3fc;
+    /* Light Ice Blue */
+    --highlight-color: #818cf8;
+    /* Indigo Highlight */
 
     /* --- Status Colors --- */
-    --correct-color: #16a34a;
-    /* Strong Green */
-    --correct-text-dark: #f0fdf4;
-    --correct-bg-light: rgba(22, 163, 74, 0.2);
-    --feedback-bg-color: #dcfce7;
-    --wrong-color: #dc2626;
-    /* Strong Red */
-    --wrong-text-dark: #fef2f2;
-    --wrong-bg-light: rgba(220, 38, 38, 0.2);
+    --correct-color: #4ade80;
+    /* Glacier Green */
+    --correct-text-dark: #dcfce7;
+    --correct-bg-light: rgba(74, 222, 128, 0.15);
+    --feedback-bg-color: #bbf7d020;
+    --wrong-color: #f87171;
+    /* Aurora Red */
+    --wrong-text-dark: #fecaca;
+    --wrong-bg-light: rgba(248, 113, 113, 0.15);
 
     /* --- Text Colors --- */
-    --text-color: #18181b;
-    /* Near Black */
-    --text-muted-color: #52525b;
-    /* Dark Grey */
-    --color-white: #ffffff;
+    --text-color: #e5e7eb;
+    /* Off-White */
+    --text-muted-color: #9ca3af;
+    /* Grey */
+    --color-white: #000000;
 
     /* --- Background Colors --- */
-    --primary-bg: #d4d4d8;
-    /* Medium Grey Body */
-    --secondary-bg: #e4e4e7;
-    /* Light Grey Container */
-    --section-bg-color: #e4e4e7;
-    --card-bg-color: #e4e4e7;
-    --ui-background-light: #f4f4f5;
-    /* Very Light Grey for UI */
+    --primary-bg: #0c1222;
+    /* Arctic Night */
+    --secondary-bg: #182134;
+    /* Deep Water */
+    --section-bg-color: #182134;
+    --card-bg-color: #252f44;
+    --ui-background-light: #374151;
     --color-transparent: transparent;
 
     /* --- Gradient & Shadow Colors --- */
-    --header-gradient-start: #e4e4e7;
-    --header-gradient-end: #d4d4d8;
-    --shadow-color-main: rgba(0, 0, 0, 0.08);
-    --shadow-color-hover: rgba(0, 0, 0, 0.16);
-    --shadow-color-footer: rgba(0, 0, 0, 0.05);
-    --accent-shadow-color: rgba(59, 130, 246, 0.25);
+    --header-gradient-start: #182134;
+    --header-gradient-end: #0c1222;
+    --shadow-color-main: rgba(0, 0, 0, 0.25);
+    --shadow-color-hover: rgba(0, 0, 0, 0.35);
+    --shadow-color-footer: rgba(0, 0, 0, 0.25);
+    --accent-shadow-color: rgba(56, 189, 248, 0.15);
 
     /* --- Border & Utility Colors --- */
-    --border-color: #a1a1aa;
-    /* Medium Grey Border */
+    --border-color: #374151;
+    /* Slate Border */
 
     /* --- Font --- */
     --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
