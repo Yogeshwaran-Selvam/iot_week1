@@ -73,20 +73,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Modular Quiz Logic ---
     quizContainers.forEach(quiz => {
-        const optionsContainer = quiz.querySelector('.quiz-options');
-        if (!optionsContainer) return;
+        // Attach event to every quiz-options block inside this quiz
+        quiz.querySelectorAll('.quiz-options').forEach(optionsContainer => {
+            optionsContainer.addEventListener('click', (event) => {
+                const selectedOption = event.target.closest('.quiz-option');
+                if (!selectedOption) return;
 
-        optionsContainer.addEventListener('click', (event) => {
-            const selectedOption = event.target.closest('.quiz-option');
-            if (!selectedOption) return;
+                const question = selectedOption.closest('.quiz-question');
+                if (question.classList.contains('answered')) return;
 
-            const question = selectedOption.closest('.quiz-question');
-            if (question.classList.contains('answered')) return;
+                question.classList.add('answered');
 
-            question.classList.add('answered');
-
-            const isCorrect = selectedOption.hasAttribute('data-correct');
-            handleAnswer(quiz, selectedOption, isCorrect);
+                const isCorrect = selectedOption.hasAttribute('data-correct');
+                handleAnswer(quiz, selectedOption, isCorrect);
+            });
         });
     });
 
