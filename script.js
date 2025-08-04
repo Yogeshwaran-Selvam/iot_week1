@@ -100,14 +100,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const options = selectedOption.parentElement.querySelectorAll('.quiz-option');
         options.forEach(opt => {
             if (opt.hasAttribute('data-correct')) {
-                opt.classList.add('correct'); // Always show the correct answer
+                opt.classList.add('correct');
             }
         });
 
         if (isCorrect) {
             quiz.dataset.score = score + 1;
         } else {
-            selectedOption.classList.add('wrong'); // Only mark the user's choice as wrong
+            selectedOption.classList.add('wrong');
         }
 
         updateScoreDisplay(quiz);
