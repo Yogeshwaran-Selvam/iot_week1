@@ -27,10 +27,32 @@ document.addEventListener('DOMContentLoaded', () => {
     function showPage(index) {
         pages.forEach((page, i) => {
             page.classList.toggle('active', i === index);
+            if (i === index) {
+                // Restore last active tab for this page, or default to first
+                const content = page.querySelector('.content');
+                if (content) {
+                    const tabId = page.dataset.activeTab || content.querySelector('.tab-btn').dataset.tab;
+                    // Deactivate all tabs
+                    content.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                    content.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+                    // Activate saved/default tab
+                    const btn = content.querySelector(`.tab-btn[data-tab="${tabId}"]`);
+                    const tab = content.querySelector(`#${tabId}`);
+                    if (btn && tab) {
+                        btn.classList.add('active');
+                        tab.classList.add('active');
+                    }
+                }
+            }
         });
 
         currentPageIndex = index;
         updateNavButtons();
+
+        // Update the URL without reloading the page
+        const url = new URL(window.location);
+        url.searchParams.set('page', index + 1); // 1-based page number
+        window.history.replaceState({}, '', url);
     }
 
     function updateNavButtons() {
@@ -68,6 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Activate the clicked tab
             button.classList.add('active');
             currentTabContainer.querySelector(`#${tabId}`).classList.add('active');
+
+            // Save the active tab for this page
+            const page = button.closest('.page');
+            if (page) {
+                page.dataset.activeTab = tabId;
+            }
         });
     });
 
@@ -155,5 +183,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // --- Initial Load ---
-    showPage(0);
+    const params = new URLSearchParams(window.location.search);
+    const pageParam = parseInt(params.get('page'), 10);
+    if (pageParam && pageParam > 0 && pageParam <= totalPages) {
+        showPage(pageParam - 1); // 0-based index
+    } else {
+        showPage(0);
+    }
 });
